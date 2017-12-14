@@ -1,0 +1,13 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library", "go_test")
+
+go_binary(
+  name = "day1",
+  srcs = ["day1.go"],
+  importpath = "github.com/foophoof/advent-of-code/2017/go/day1",
+)
+
+go_test(
+  name = "day1_test",
+  srcs = ["day1_test.go", "day1.go"],
+  importpath = "github.com/foophoof/advent-of-code/2017/go/day1",
+)
