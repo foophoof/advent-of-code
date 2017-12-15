@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	_ "github.com/foophoof/advent-of-code/2017/go/day1"
+	_ "github.com/foophoof/advent-of-code/2017/go/day2"
 	"github.com/foophoof/advent-of-code/2017/go/solution"
 )
 

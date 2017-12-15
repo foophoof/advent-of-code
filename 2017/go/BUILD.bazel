@@ -12,6 +12,7 @@ go_binary(
   deps = [
     ":solution",
     ":day1",
+    ":day2",
   ],
   importpath = "github.com/foophoof/advent-of-code/2017/go/main",
 )
@@ -28,4 +29,18 @@ go_test(
   srcs = ["day1_test.go"],
   deps = [":day1"],
   importpath = "github.com/foophoof/advent-of-code/2017/go/day1-test",
+)
+
+go_library(
+  name = "day2",
+  srcs = ["day2.go"],
+  deps = [":solution"],
+  importpath = "github.com/foophoof/advent-of-code/2017/go/day2",
+)
+
+go_test(
+  name = "day2_test",
+  srcs = ["day2_test.go"],
+  deps = [":day2"],
+  importpath = "github.com/foophoof/advent-of-code/2017/go/day2-test",
 )
